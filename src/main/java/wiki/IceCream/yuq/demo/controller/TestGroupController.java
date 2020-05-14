@@ -4,7 +4,9 @@ import com.IceCreamQAQ.Yu.annotation.Action;
 import com.IceCreamQAQ.Yu.annotation.Before;
 import com.icecreamqaq.yuq.YuQ;
 import com.icecreamqaq.yuq.annotation.GroupController;
+import com.icecreamqaq.yuq.annotation.NextContext;
 import com.icecreamqaq.yuq.annotation.PathVar;
+import com.icecreamqaq.yuq.annotation.Save;
 import com.icecreamqaq.yuq.message.Message;
 import com.icecreamqaq.yuq.message.MessageFactory;
 import com.icecreamqaq.yuq.message.MessageItemFactory;
@@ -101,8 +103,23 @@ public class TestGroupController {
      * 如：PathVar.Type.Switch，可以将文字内容智能的转化为 boolean 类型，这样在做开关类的选项时，就要方便的多了。
      */
     @Action("设置")
-    public String menu2(@PathVar(value = 1,type = PathVar.Type.Switch)boolean flag) {
+    public String menu2(@PathVar(value = 1, type = PathVar.Type.Switch) boolean flag) {
         return "设置选项：" + flag;
+    }
+
+    /***
+     * NextContext 注解用来声明完成之后进入某个上下文。
+     * 这是一个用来进入上下文的 Action，当然，他与普通的 Action 没有什么区别。
+     * 他可以完成普通 Action 的所有功能。
+     * 只是当他在正常完成之后，会帮你把上下文自动切换到 NextContext 中声明的内容。
+     *
+     * 正常完成则为，当 Action 方法没有产生任何异常时，Action 方为正常完成。
+     */
+    @Action("绑定手机号")
+    @NextContext("bindPhone")
+    public String bindPhone(long qq) throws Message {
+        if (qq % 2 != 0) throw mif.text("您无需绑定手机号码。").toMessage();
+        return "请输入手机号码。";
     }
 
 }
