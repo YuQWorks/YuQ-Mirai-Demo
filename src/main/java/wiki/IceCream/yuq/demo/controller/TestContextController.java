@@ -1,21 +1,13 @@
 package wiki.IceCream.yuq.demo.controller;
 
 import com.IceCreamQAQ.Yu.annotation.Action;
-import com.icecreamqaq.yuq.annotation.ContextController;
-import com.icecreamqaq.yuq.annotation.NextContext;
-import com.icecreamqaq.yuq.annotation.PathVar;
-import com.icecreamqaq.yuq.annotation.Save;
+import com.icecreamqaq.yuq.annotation.*;
 import com.icecreamqaq.yuq.controller.BotActionContext;
+import com.icecreamqaq.yuq.controller.NextActionContext;
 import com.icecreamqaq.yuq.message.Message;
-import com.icecreamqaq.yuq.message.MessageItemFactory;
-
-import javax.inject.Inject;
 
 @ContextController
 public class TestContextController {
-
-    @Inject
-    private MessageItemFactory mif;
 
     /***
      * 在 ContextController 里面的所有 Action，会被自动映射成上下文路由。
@@ -30,12 +22,10 @@ public class TestContextController {
      */
     @Action("bindPhone")
     @NextContext("phoneVerKey")
-    public String bindPhone(@Save @PathVar(0) String phone, BotActionContext actionContext) throws Message {
-        if (phone.length() != 11){
-            actionContext.setNextContext("bindPhone");
-            throw mif.text("手机号码输入错误！请重新输入").toMessage();
-        }
-        return "请输入手机验证码。";
+    @ContextTip("请输入手机号码。")
+    @ContextTip(value = "手机号码输入错误，请重新输入。", status = 1)
+    public void bindPhone(@Save @PathVar(0) String phone, BotActionContext actionContext) throws Message {
+        if (phone.length() != 11) throw new NextActionContext("bindPhone", 1);
     }
 
     /***
@@ -43,8 +33,11 @@ public class TestContextController {
      * 当不再提供一个 NextContext 时，则完成一个上下文，回归普通。
      */
     @Action("phoneVerKey")
-    public String phoneVerKey(@PathVar(0) String key,String phone){
-        return String.format("您要绑定的手机号为：%s，手机验证码为：%s，绑定成功！",phone,key);
+    @ContextTip("请输入手机验证码。")
+    @ContextTip(value = "手机验证码输入错误，请重新输入。", status = 1)
+    public String phoneVerKey(@PathVar(0) String key, String phone) {
+        if (key.length() != 4) throw new NextActionContext("phoneVerKey", 1);
+        return String.format("您要绑定的手机号为：%s，手机验证码为：%s，绑定成功！", phone, key);
     }
 
 }

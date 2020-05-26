@@ -117,9 +117,8 @@ public class TestGroupController {
      */
     @Action("绑定手机号")
     @NextContext("bindPhone")
-    public String bindPhone(long qq) throws Message {
-        if (qq % 2 != 0) throw mif.text("您无需绑定手机号码。").toMessage();
-        return "请输入手机号码。";
+    public void bindPhone(long qq) throws Message {
+        if (qq % 2 == 0) throw mif.text("您无需绑定手机号码。").toMessage();
     }
 
 }

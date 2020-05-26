@@ -33,7 +33,7 @@ public class OnMessageEvent {
      */
     @Event(weight = Event.Weight.low)
     public void onGroupMessageLow(GroupMessageEvent event) {
-        if (event.getMessage().getGroup() == 111) event.setCancel(true);
+        if (111 == event.getMessage().getGroup()) event.setCancel(true);
     }
 
     /***
@@ -52,7 +52,6 @@ public class OnMessageEvent {
      * 当你注册了某个事件的父事件的时候，则这个父事件的所有子事件都会被响应。
      * 如 MessageEvent 是 PrivateMessageEvent 和 GroupMessageEvent 的父事件，
      * 则 PrivateMessageEvent 和 GroupMessageEvent 事件触发的时候，监听了 MessageEvent 事件的监听器都会受到响应。
-     * @param event
      */
     @Event
     public void onMessage(MessageEvent event) {

@@ -10,7 +10,7 @@ public class Start {
      * @param args 启动参数
      */
     public static void main(String[] args) {
-        YuQMiraiStart.start();
+        YuQMiraiStart.start(args);
     }
 
 }

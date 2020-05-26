@@ -16,7 +16,7 @@ public class FriendListEvent {
      * 否则将忽略（不进行任何处理）这个好友请求。
      */
     @Event
-    public void newFriendRequestEvent(NewFriendRequestEvent event){
+    public void newFriendRequestEvent(NewFriendRequestEvent event) {
         event.setAccept(true);
         event.setCancel(true);
     }

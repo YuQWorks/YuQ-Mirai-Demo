@@ -17,7 +17,7 @@ public class JobMain {
      * 时钟任务方法不接受任何参数，也不接受任何返回值。
      */
     @Cron("10s")
-    public void ten(){
+    public void ten() {
         System.out.println("到十秒钟啦！");
     }
 
