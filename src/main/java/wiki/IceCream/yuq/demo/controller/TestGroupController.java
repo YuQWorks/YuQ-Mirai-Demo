@@ -6,13 +6,11 @@ import com.icecreamqaq.yuq.YuQ;
 import com.icecreamqaq.yuq.annotation.GroupController;
 import com.icecreamqaq.yuq.annotation.NextContext;
 import com.icecreamqaq.yuq.annotation.PathVar;
-import com.icecreamqaq.yuq.annotation.Save;
 import com.icecreamqaq.yuq.message.Message;
 import com.icecreamqaq.yuq.message.MessageFactory;
 import com.icecreamqaq.yuq.message.MessageItemFactory;
 
 import javax.inject.Inject;
-import java.io.File;
 
 /***
  * GroupController 代表了，这个 Controller 将响应群消息。
@@ -88,14 +86,15 @@ public class TestGroupController {
      * Action 方法可以抛出异常，来返回一些信息。
      *   当您抛出了一个 Message 类型的异常后，如果您没有设置任何接收的 QQ，或 QQ 群，那么我们将会将消息发送至当前消息来源者，如果您设置了接收对象，那么发送至您的接收对象。
      *   当您想中断处理链路，并且不进行任何返回的时候，您可以抛出 DoNone 类型的异常。
+     * @return
      */
     @Action("菜单")
-    public String menu(long qq) {
-        return yuq.getFriends().get(qq).getName() + "，您好。\n" +
+    public Message menu(long qq) {
+        return mif.at(qq).plus("，您好。\n" +
                 "这里是基础菜单。" +
-                "但是由于这是一个演示 Demo，他没有什么功能。" +
-                "所以也并没有菜单。" +
-                "那就这样吧。";
+                        "但是由于这是一个演示 Demo，他没有什么功能。" +
+                        "所以也并没有菜单。" +
+                        "那就这样吧。");
     }
 
     /***
