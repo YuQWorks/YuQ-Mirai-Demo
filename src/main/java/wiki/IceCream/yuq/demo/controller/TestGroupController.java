@@ -90,8 +90,12 @@ public class TestGroupController {
      *   当您想中断处理链路，并且不进行任何返回的时候，您可以抛出 DoNone 类型的异常。
      */
     @Action("菜单")
-    public Message menu(long qq) {
-        return mf.newMessage().plus(mif.image(new File("")));
+    public String menu(long qq) {
+        return yuq.getFriends().get(qq).getName() + "，您好。\n" +
+                "这里是基础菜单。" +
+                "但是由于这是一个演示 Demo，他没有什么功能。" +
+                "所以也并没有菜单。" +
+                "那就这样吧。";
     }
 
     /***
