@@ -1,13 +1,13 @@
 package wiki.IceCream.yuq.demo.event;
 
 import com.IceCreamQAQ.Yu.annotation.Event;
-import com.IceCreamQAQ.Yu.annotation.EventListener_;
+import com.IceCreamQAQ.Yu.annotation.EventListener;
 import com.icecreamqaq.yuq.event.GroupMessageEvent;
 import com.icecreamqaq.yuq.event.MessageEvent;
 import com.icecreamqaq.yuq.event.PrivateMessageEvent;
 import com.icecreamqaq.yuq.message.Message;
 
-@EventListener_
+@EventListener
 public class OnMessageEvent {
 
 

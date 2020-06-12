@@ -1,10 +1,10 @@
 package wiki.IceCream.yuq.demo.event;
 
 import com.IceCreamQAQ.Yu.annotation.Event;
-import com.IceCreamQAQ.Yu.annotation.EventListener_;
+import com.IceCreamQAQ.Yu.annotation.EventListener;
 import com.icecreamqaq.yuq.event.NewFriendRequestEvent;
 
-@EventListener_
+@EventListener
 public class FriendListEvent {
 
     /***
