@@ -8,6 +8,12 @@
     <artifactId>YuQ-Mirai-Demo</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <parent>
+        <groupId>com.IceCreamQAQ.YuQ</groupId>
+        <artifactId>YuQ-Mirai-Starter</artifactId>
+        <version>0.0.1</version>
+    </parent>
+
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -21,16 +27,9 @@
         <dependency>
             <groupId>com.IceCreamQAQ.YuQ</groupId>
             <artifactId>YuQ-Mirai</artifactId>
-            <version>0.0.1.4</version>
+            <version>0.0.2.1</version>
         </dependency>
     </dependencies>
-
-    <repositories>
-        <repository>
-            <id>IceCream</id>
-            <url>https://maven.icecreamqaq.com/repository/maven-public/</url>
-        </repository>
-    </repositories>
 
     <build>
         <plugins>
