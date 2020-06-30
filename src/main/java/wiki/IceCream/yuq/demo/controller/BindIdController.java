@@ -4,11 +4,16 @@ import com.IceCreamQAQ.Yu.annotation.Action;
 import com.icecreamqaq.yuq.annotation.*;
 import com.icecreamqaq.yuq.controller.BotActionContext;
 
+/***
+ * 虽说目前 GroupController、PrivateController 与 ContextController 可以混用，但并不推荐。
+ * 两者中的 Before 可能会造成逻辑冲突。
+ * 并且 GroupController、PrivateController 中的无需上下文的 Action 被 ContextController 加载解析，可能造成无意义的性能浪费，并且可能带来问题。
+ */
 @GroupController
 @ContextController
 public class BindIdController {
 
-    @Action("{绑定(i|I)(d|D)}")
+    @Action("\\绑定(i|I)(d|D)\\")
     @NextContext("bindId")
     public String bindId(@Save @PathVar(1) String id, BotActionContext context) {
         if (id == null) return "你绑定 NM 呢？";
