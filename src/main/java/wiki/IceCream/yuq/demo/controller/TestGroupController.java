@@ -2,12 +2,14 @@ package wiki.IceCream.yuq.demo.controller;
 
 import com.IceCreamQAQ.Yu.annotation.Action;
 import com.IceCreamQAQ.Yu.annotation.Before;
+import com.IceCreamQAQ.Yu.job.JobManager;
 import com.icecreamqaq.yuq.YuQ;
 import com.icecreamqaq.yuq.annotation.GroupController;
 import com.icecreamqaq.yuq.annotation.NextContext;
-import com.icecreamqaq.yuq.annotation.PathVar;
+import com.icecreamqaq.yuq.entity.Member;
 import com.icecreamqaq.yuq.message.Message;
 import com.icecreamqaq.yuq.message.MessageFactory;
+import com.icecreamqaq.yuq.message.MessageItem;
 import com.icecreamqaq.yuq.message.MessageItemFactory;
 
 import javax.inject.Inject;
@@ -64,6 +66,8 @@ public class TestGroupController {
         if (qq % 2 == 0) throw mif.text("你没有使用该命令的权限！").toMessage();
     }
 
+    private boolean menuFlag = true;
+
     /***
      * Action 则为具体的控制器的动作，负责处理收到的消息。
      *
@@ -89,26 +93,70 @@ public class TestGroupController {
      * @return
      */
     @Action("菜单")
-    public Message menu(long qq) {
-        return mif.at(qq).plus("，您好。\n" +
-                "这里是基础菜单。" +
-                        "但是由于这是一个演示 Demo，他没有什么功能。" +
-                        "所以也并没有菜单。" +
-                        "那就这样吧。");
+    public Object menu(long qq) {
+        if (menuFlag)
+            return mif.at(qq).plus("，您好。\n" +
+                    "这里是基础菜单。" +
+                    "但是由于这是一个演示 Demo，他没有什么功能。" +
+                    "所以也并没有菜单。" +
+                    "那就这样吧。");
+        return "菜单被禁用！";
     }
 
     /***
-     * PathVar 注解。
-     * 您可以通过 PathVar 注解，将消息的内容，注入到方法参数。
-     * 通过合理指定 Type 属性来更加轻松的使用参数。
-     * 但不是所有消息内容都支持转化到相应类型，如果无法转化，则会返回 null
-     *
-     * 如：PathVar.Type.Switch，可以将文字内容智能的转化为 boolean 类型，这样在做开关类的选项时，就要方便的多了。
+     * Action 内，不仅可以写单级指令，还可以写多级指令。
+     * 最后的 {flag} 则代表了一个可变内容，他可以根据方法参数类型，自动映射为指定类型。
      */
-    @Action("设置")
-    public String menu2(@PathVar(value = 1, type = PathVar.Type.Switch) boolean flag) {
-        return "设置选项：" + flag;
+    @Action("设置 菜单开关 {flag}")
+    public String menu2(boolean flag) {
+        menuFlag = flag;
+        return "菜单开关：" + flag;
     }
+
+    /***
+     * 可以在路由内书写 { 名称 : 正则表达式 } 来动态匹配指令上的内容。
+     * 如果你想匹配任意内容，则 : 及后续可以省略。示例：{color}
+     * 本例子则代表只匹配单个文本。
+     */
+    @Action("发个{color:.}包")
+    public String sendPackage(String color) {
+        return String.format("QQ%s包！", color);
+    }
+
+    /***
+     * YuQ 可以将您发送的数字QQ号，或者 At 某人，智能转化为您所需要的内容。
+     * 本处就将对象转化为 Member 的实例。
+     * 通过调用 Member 的 ban 方法，可以将目标禁言一段时间。单位：秒。
+     * 通过书写 Member 类型的 qq 参数，即可获取当前消息发送者的 Member 实例。
+     * 通过调用 Member 的 isAdmin 方法，可以获取当前目标是否具有管理员权限。（管理员与群主都具有管理员权限）
+     *
+     * 本 Action 的作用，如果发送者是管理员，就将目标禁言一段时间，如果发送人不是管理员，就将自己禁言一段时间。
+     */
+    @Action("禁言 {sb} {time}")
+    public String ban(Member sb, Member qq, int time) {
+        if (time < 60) time = 60;
+        if (qq.isAdmin()) {
+            sb.ban(time);
+            return "好的";
+        }
+        qq.ban(time);
+        return "您没有使用该命令的权限！为了防止恶意操作，你已被禁言相同时间。";
+    }
+
+    @Inject
+    private JobManager jobManager;
+
+    /***
+     * 我们可以通过注入 JobManager 快速，动态的创建定时与时钟任务。
+     * 写在路由中的 {time} 与整级路由 {nr} 最大的不同，就是写在路由中的，只能用 String 类型接受，并不能智能匹配成其他类型。
+     */
+    @Action("{time}秒后说 {nr}")
+    public Object timeSend(String time, MessageItem nr, Message message) {
+        Message nm =message.newMessage().plus(nr);
+        jobManager.registerTimer(() -> yuq.sendMessage(nm), Integer.parseInt(time) * 1000);
+        return "好的";
+    }
+
 
     /***
      * NextContext 注解用来声明完成之后进入某个上下文。

@@ -18,7 +18,9 @@ YuQ Framework 的目的就是让机器人开发变得更简单和更有效率。
 ### 后台队列
 参考 wiki.IceCream.yuq.demo.job.JobMain
 ### 数据库支持
-开发中
+使用方法 // TODO
+### Web支持
+使用方法 // TODO
 ## 使用方法：
 clone  
 编辑 /src/main/resource/conf/YuQ.properties 填写合适的内容。  
