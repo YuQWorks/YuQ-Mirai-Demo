@@ -19,9 +19,8 @@ public class OnMessageEvent {
      */
     @Event
     public void onGroupMessage(GroupMessageEvent event) {
-        Message message = event.getMessage();
-        System.out.println("消息来自群：" + message.getGroup());
-        System.out.println("消息来自群成员：" + message.getQq());
+        System.out.printf("消息来自群：%s(%d)%n", event.getGroup().getName(), event.getGroup().getId());
+        System.out.printf("消息来自群成员：%s(%d)%n" , event.getSender().getNameCard(),event.getSender().getId());
     }
 
     /***
@@ -33,7 +32,7 @@ public class OnMessageEvent {
      */
     @Event(weight = Event.Weight.low)
     public void onGroupMessageLow(GroupMessageEvent event) {
-        if (111 == event.getMessage().getGroup()) event.setCancel(true);
+        if (111 == event.getGroup().getId()) event.setCancel(true);
     }
 
     /***
@@ -44,8 +43,7 @@ public class OnMessageEvent {
      */
     @Event
     public void onPrivateMessage(PrivateMessageEvent event) {
-        Message message = event.getMessage();
-        System.out.println("消息来自：" + message.getQq());
+        System.out.printf("消息来自群成员：%s(%d)%n" , event.getSender().getName(),event.getSender().getId());
     }
 
     /***

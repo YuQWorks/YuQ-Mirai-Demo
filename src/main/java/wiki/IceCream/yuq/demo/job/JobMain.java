@@ -3,6 +3,8 @@ package wiki.IceCream.yuq.demo.job;
 import com.IceCreamQAQ.Yu.annotation.Cron;
 import com.IceCreamQAQ.Yu.annotation.JobCenter;
 import com.IceCreamQAQ.Yu.util.DateUtil;
+import com.icecreamqaq.yuq.YuQ;
+import com.icecreamqaq.yuq.message.Message;
 
 import javax.inject.Inject;
 
@@ -26,6 +28,16 @@ public class JobMain {
 
     @Inject
     private DateUtil dateUtil;
+
+    @Inject
+    private YuQ yuq;
+
+    @Cron("At::h::00")
+    public void printTime() {
+        Message message = new Message().plus("内容");
+
+        yuq.getGroups().get(123456789L).sendMessage(message);
+    }
 
     /***
      * 定时任务。

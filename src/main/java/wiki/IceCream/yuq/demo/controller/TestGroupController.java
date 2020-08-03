@@ -6,6 +6,7 @@ import com.IceCreamQAQ.Yu.job.JobManager;
 import com.icecreamqaq.yuq.YuQ;
 import com.icecreamqaq.yuq.annotation.GroupController;
 import com.icecreamqaq.yuq.annotation.NextContext;
+import com.icecreamqaq.yuq.entity.Group;
 import com.icecreamqaq.yuq.entity.Member;
 import com.icecreamqaq.yuq.message.Message;
 import com.icecreamqaq.yuq.message.MessageFactory;
@@ -27,12 +28,6 @@ public class TestGroupController {
      */
     @Inject
     private YuQ yuq;
-
-    /***
-     * MessageFactory 可以用来创建 Message 对象，用来发送消息。
-     */
-    @Inject
-    private MessageFactory mf;
 
     /***
      * MessageItemFactory 用来创建 Message 的具体内容。
@@ -151,9 +146,9 @@ public class TestGroupController {
      * 写在路由中的 {time} 与整级路由 {nr} 最大的不同，就是写在路由中的，只能用 String 类型接受，并不能智能匹配成其他类型。
      */
     @Action("{time}秒后说 {nr}")
-    public Object timeSend(String time, MessageItem nr, Message message) {
-        Message nm =message.newMessage().plus(nr);
-        jobManager.registerTimer(() -> yuq.sendMessage(nm), Integer.parseInt(time) * 1000);
+    public Object timeSend(String time, MessageItem nr, Group group) {
+        Message nm = new Message().plus(nr);
+        jobManager.registerTimer(() -> group.sendMessage(nm), Integer.parseInt(time) * 1000);
         return "好的";
     }
 
