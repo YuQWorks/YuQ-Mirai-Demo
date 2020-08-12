@@ -27,7 +27,7 @@
         <dependency>
             <groupId>com.IceCreamQAQ.YuQ</groupId>
             <artifactId>YuQ-Mirai</artifactId>
-            <version>0.0.6.0</version>
+            <version>0.0.6.3</version>
         </dependency>
     </dependencies>
 

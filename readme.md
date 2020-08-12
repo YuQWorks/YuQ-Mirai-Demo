@@ -24,6 +24,11 @@ YuQ Framework 的目的就是让机器人开发变得更简单和更有效率。
 ## 使用方法：
 clone  
 编辑 /src/main/resource/conf/YuQ.properties 填写合适的内容。  
-run wiki.IceCream.yuq.demo.Start  
+run wiki.IceCream.yuq.demo.Start
+项目打成jar包: mvn package  
+
+### 2020/8/12更新
+允许通过命令行启动, 在运行时添加: qq号 qq密码, 如果想要使用YuQ.properties启动,
+只需要不添加命令行参数即可。
 
 更详细的使用文档，以及框架的相关开源，将在这段时间内慢慢到来。

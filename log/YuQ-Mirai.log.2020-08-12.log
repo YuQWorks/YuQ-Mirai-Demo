@@ -1,0 +1,196 @@
+2020-08-12_09:37:10.679 [main] INFO  com.IceCreamQAQ.Yu.di.ConfigManager - ConfigManager Init.
+2020-08-12_09:37:10.814 [main] INFO  com.IceCreamQAQ.Yu.di.ConfigManager - ConfigManager Config Mode: dev.
+2020-08-12_09:37:10.814 [main] INFO  com.IceCreamQAQ.Yu.di.ConfigManager - ConfigManager Init Success.
+2020-08-12_09:37:13.239 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Init ApplicationService: WebHelperBeanFactory.
+2020-08-12_09:37:15.114 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Init ApplicationService: WebHelperBeanFactory Success!
+2020-08-12_09:37:15.119 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Init ApplicationService: EhcacheHelpFactory.
+2020-08-12_09:37:15.129 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Init ApplicationService: EhcacheHelpFactory Success!
+2020-08-12_09:37:15.129 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Init ApplicationService: MiraiBot.
+2020-08-12_09:37:17.339 [main] INFO  com.icecreamqaq.yuq.mirai.logger.Bot - Logging in...
+2020-08-12_09:37:17.384 [main] INFO  c.i.yuq.mirai.logger.Network - Connected to server msfwifi.3g.qq.com:8080
+2020-08-12_09:38:11.999 [main] INFO  c.i.yuq.mirai.logger.Network - Login successful
+2020-08-12_09:38:12.154 [main] INFO  c.i.yuq.mirai.logger.Network - 开始加载好友信息
+2020-08-12_09:38:12.179 [main] INFO  c.i.yuq.mirai.logger.Network - 开始加载群组列表与群成员列表
+2020-08-12_09:38:13.382 [main] INFO  c.i.yuq.mirai.logger.Network - 好友列表加载完成, 共 832个
+2020-08-12_09:38:16.979 [main] INFO  c.i.yuq.mirai.logger.Network - 群组列表与群成员加载完成, 共 90个
+2020-08-12_09:38:16.989 [DefaultDispatcher-worker-13] INFO  c.i.yuq.mirai.logger.Network - Awaiting ConfigPushSvc.PushReq
+2020-08-12_09:38:16.989 [main] INFO  c.i.yuq.mirai.logger.Network - Syncing friend message history...
+2020-08-12_09:38:17.419 [main] INFO  c.i.yuq.mirai.logger.Network - Syncing friend message history: Success
+2020-08-12_09:38:17.539 [main] INFO  com.icecreamqaq.yuq.mirai.logger.Bot - Login successful
+2020-08-12_09:38:17.901 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Init ApplicationService: MiraiBot Success!
+2020-08-12_09:38:17.901 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Init ApplicationService: MiraiMessageItemFactory.
+2020-08-12_09:38:17.901 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Init ApplicationService: MiraiMessageItemFactory Success!
+2020-08-12_09:38:17.901 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Init ApplicationService: JobManager.
+2020-08-12_09:38:17.901 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Init ApplicationService: JobManager Success!
+2020-08-12_09:38:17.933 [main] INFO  c.I.Yu.event.EventListenerLoader - Register EventListener: wiki.IceCream.yuq.demo.event.OnMessageEvent.
+2020-08-12_09:38:17.974 [main] INFO  c.I.Yu.event.EventListenerLoader - Register EventListener: wiki.IceCream.yuq.demo.event.OnMessageEvent Success!
+2020-08-12_09:38:17.974 [main] INFO  c.I.Yu.event.EventListenerLoader - Register EventListener: wiki.IceCream.yuq.demo.event.FriendListEvent.
+2020-08-12_09:38:17.979 [main] INFO  c.I.Yu.event.EventListenerLoader - Register EventListener: wiki.IceCream.yuq.demo.event.FriendListEvent Success!
+2020-08-12_09:38:17.982 [main] INFO  com.IceCreamQAQ.Yu.job.JobLoader - Register JobCenter: com.IceCreamQAQ.Yu.job.ZJobCenter.
+2020-08-12_09:38:17.982 [main] INFO  com.IceCreamQAQ.Yu.job.JobLoader - Register JobCenter: com.IceCreamQAQ.Yu.job.ZJobCenter Success!
+2020-08-12_09:38:17.982 [main] INFO  com.IceCreamQAQ.Yu.job.JobLoader - Register JobCenter: wiki.IceCream.yuq.demo.job.JobMain.
+2020-08-12_09:38:17.989 [main] INFO  com.IceCreamQAQ.Yu.job.JobLoader - Register JobCenter: wiki.IceCream.yuq.demo.job.JobMain Success!
+2020-08-12_09:38:17.989 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Start ApplicationService: WebHelperBeanFactory.
+2020-08-12_09:38:17.989 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Start ApplicationService: WebHelperBeanFactory Success!
+2020-08-12_09:38:17.989 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Start ApplicationService: EhcacheHelpFactory.
+2020-08-12_09:38:17.989 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Start ApplicationService: EhcacheHelpFactory Success!
+2020-08-12_09:38:17.989 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Start ApplicationService: MiraiBot.
+2020-08-12_09:38:18.009 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Start ApplicationService: MiraiBot Success!
+2020-08-12_09:38:18.009 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Start ApplicationService: MiraiMessageItemFactory.
+2020-08-12_09:38:18.009 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Start ApplicationService: MiraiMessageItemFactory Success!
+2020-08-12_09:38:18.009 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Start ApplicationService: JobManager.
+2020-08-12_09:38:18.019 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Start ApplicationService: JobManager Success!
+2020-08-12_09:38:18.019 [main] INFO  c.i.yuq.mirai.YuQMiraiStart - Done! 67.56s.
+2020-08-12_09:38:27.009 [DefaultDispatcher-worker-17] INFO  c.i.yuq.mirai.logger.Network - Missing ConfigPushSvc.PushReq.
+2020-08-12_09:39:18.949 [main] INFO  com.IceCreamQAQ.Yu.di.ConfigManager - ConfigManager Init.
+2020-08-12_09:39:19.073 [main] INFO  com.IceCreamQAQ.Yu.di.ConfigManager - ConfigManager Config Mode: dev.
+2020-08-12_09:39:19.073 [main] INFO  com.IceCreamQAQ.Yu.di.ConfigManager - ConfigManager Init Success.
+2020-08-12_09:39:21.189 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Init ApplicationService: WebHelperBeanFactory.
+2020-08-12_09:39:22.079 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Init ApplicationService: WebHelperBeanFactory Success!
+2020-08-12_09:39:22.084 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Init ApplicationService: EhcacheHelpFactory.
+2020-08-12_09:39:22.089 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Init ApplicationService: EhcacheHelpFactory Success!
+2020-08-12_09:39:22.094 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Init ApplicationService: MiraiBot.
+2020-08-12_09:39:24.361 [main] INFO  com.icecreamqaq.yuq.mirai.logger.Bot - Logging in...
+2020-08-12_09:39:24.389 [main] INFO  c.i.yuq.mirai.logger.Network - Connected to server 42.81.172.22:80
+2020-08-12_09:39:24.669 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Init ApplicationService: MiraiBot Error!
+net.mamoe.mirai.network.WrongPasswordException: Error(title=登录失败, message=帐号或密码错误，请重新输入。, errorInfo=)
+	at net.mamoe.mirai.qqandroid.network.QQAndroidBotNetworkHandler.closeEverythingAndRelogin(QQAndroidBotNetworkHandler.kt:180)
+	at net.mamoe.mirai.qqandroid.network.QQAndroidBotNetworkHandler$closeEverythingAndRelogin$1.invokeSuspend(QQAndroidBotNetworkHandler.kt)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:32)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:113)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:56)
+	at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:274)
+	at kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:84)
+	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking(Builders.kt:59)
+	at kotlinx.coroutines.BuildersKt.runBlocking(Unknown Source)
+	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking$default(Builders.kt:38)
+	at kotlinx.coroutines.BuildersKt.runBlocking$default(Unknown Source)
+	at com.icecreamqaq.yuq.mirai.MiraiBot.init(MiraiBot.kt:132)
+	at com.IceCreamQAQ.Yu.as.AsLoader.load(AsLoader.kt:42)
+	at com.IceCreamQAQ.Yu.loader.AppLoader.load(AppLoader.kt:86)
+	at com.IceCreamQAQ.Yu.DefaultApp.start(DefaultApp.kt:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.icecreamqaq.yuq.mirai.YuQMiraiStart$Companion.start(YuQMiraiStart.kt:29)
+	at com.icecreamqaq.yuq.mirai.YuQMiraiStart.start(YuQMiraiStart.kt)
+	at wiki.IceCream.yuq.demo.Start.main(Start.java:32)
+2020-08-12_09:39:24.669 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Init ApplicationService: MiraiMessageItemFactory.
+2020-08-12_09:39:24.669 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Init ApplicationService: MiraiMessageItemFactory Success!
+2020-08-12_09:39:24.669 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Init ApplicationService: JobManager.
+2020-08-12_09:39:24.669 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Init ApplicationService: JobManager Success!
+2020-08-12_09:39:24.669 [main] INFO  com.IceCreamQAQ.Yu.job.JobLoader - Register JobCenter: com.IceCreamQAQ.Yu.job.ZJobCenter.
+2020-08-12_09:39:24.669 [main] INFO  com.IceCreamQAQ.Yu.job.JobLoader - Register JobCenter: com.IceCreamQAQ.Yu.job.ZJobCenter Success!
+2020-08-12_09:39:24.669 [main] INFO  com.IceCreamQAQ.Yu.job.JobLoader - Register JobCenter: wiki.IceCream.yuq.demo.job.JobMain.
+2020-08-12_09:39:24.669 [main] INFO  com.IceCreamQAQ.Yu.job.JobLoader - Register JobCenter: wiki.IceCream.yuq.demo.job.JobMain Success!
+2020-08-12_09:39:24.669 [main] INFO  c.I.Yu.event.EventListenerLoader - Register EventListener: wiki.IceCream.yuq.demo.event.OnMessageEvent.
+2020-08-12_09:39:24.714 [main] INFO  c.I.Yu.event.EventListenerLoader - Register EventListener: wiki.IceCream.yuq.demo.event.OnMessageEvent Success!
+2020-08-12_09:39:24.714 [main] INFO  c.I.Yu.event.EventListenerLoader - Register EventListener: wiki.IceCream.yuq.demo.event.FriendListEvent.
+2020-08-12_09:39:24.714 [main] INFO  c.I.Yu.event.EventListenerLoader - Register EventListener: wiki.IceCream.yuq.demo.event.FriendListEvent Success!
+2020-08-12_09:39:24.749 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Start ApplicationService: WebHelperBeanFactory.
+2020-08-12_09:39:24.749 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Start ApplicationService: WebHelperBeanFactory Success!
+2020-08-12_09:39:24.759 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Start ApplicationService: EhcacheHelpFactory.
+2020-08-12_09:39:24.759 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Start ApplicationService: EhcacheHelpFactory Success!
+2020-08-12_09:39:24.759 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Start ApplicationService: MiraiBot.
+2020-08-12_09:39:24.799 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Start ApplicationService: MiraiBot Success!
+2020-08-12_09:39:24.799 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Start ApplicationService: MiraiMessageItemFactory.
+2020-08-12_09:39:24.799 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Start ApplicationService: MiraiMessageItemFactory Success!
+2020-08-12_09:39:24.799 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Start ApplicationService: JobManager.
+2020-08-12_09:39:24.804 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Start ApplicationService: JobManager Success!
+2020-08-12_09:39:24.804 [main] INFO  c.i.yuq.mirai.YuQMiraiStart - Done! 6.045s.
+2020-08-12_09:42:25.414 [main] INFO  com.IceCreamQAQ.Yu.di.ConfigManager - ConfigManager Init.
+2020-08-12_09:42:25.529 [main] INFO  com.IceCreamQAQ.Yu.di.ConfigManager - ConfigManager Config Mode: dev.
+2020-08-12_09:42:25.529 [main] INFO  com.IceCreamQAQ.Yu.di.ConfigManager - ConfigManager Init Success.
+2020-08-12_09:42:27.859 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Init ApplicationService: WebHelperBeanFactory.
+2020-08-12_09:42:29.058 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Init ApplicationService: WebHelperBeanFactory Success!
+2020-08-12_09:42:29.063 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Init ApplicationService: EhcacheHelpFactory.
+2020-08-12_09:42:29.074 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Init ApplicationService: EhcacheHelpFactory Success!
+2020-08-12_09:42:29.079 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Init ApplicationService: MiraiBot.
+2020-08-12_09:42:31.059 [main] INFO  com.icecreamqaq.yuq.mirai.logger.Bot - Logging in...
+2020-08-12_09:42:31.089 [main] INFO  c.i.yuq.mirai.logger.Network - Connected to server 42.81.172.22:80
+2020-08-12_09:42:31.369 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Init ApplicationService: MiraiBot Error!
+net.mamoe.mirai.network.WrongPasswordException: Error(title=登录失败, message=帐号或密码错误，请重新输入。, errorInfo=)
+	at net.mamoe.mirai.qqandroid.network.QQAndroidBotNetworkHandler.closeEverythingAndRelogin(QQAndroidBotNetworkHandler.kt:180)
+	at net.mamoe.mirai.qqandroid.network.QQAndroidBotNetworkHandler$closeEverythingAndRelogin$1.invokeSuspend(QQAndroidBotNetworkHandler.kt)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:32)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:113)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:56)
+	at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:274)
+	at kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:84)
+	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking(Builders.kt:59)
+	at kotlinx.coroutines.BuildersKt.runBlocking(Unknown Source)
+	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking$default(Builders.kt:38)
+	at kotlinx.coroutines.BuildersKt.runBlocking$default(Unknown Source)
+	at com.icecreamqaq.yuq.mirai.MiraiBot.init(MiraiBot.kt:132)
+	at com.IceCreamQAQ.Yu.as.AsLoader.load(AsLoader.kt:42)
+	at com.IceCreamQAQ.Yu.loader.AppLoader.load(AppLoader.kt:86)
+	at com.IceCreamQAQ.Yu.DefaultApp.start(DefaultApp.kt:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.icecreamqaq.yuq.mirai.YuQMiraiStart$Companion.start(YuQMiraiStart.kt:29)
+	at com.icecreamqaq.yuq.mirai.YuQMiraiStart.start(YuQMiraiStart.kt)
+	at wiki.IceCream.yuq.demo.Start.main(Start.java:32)
+2020-08-12_09:42:31.369 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Init ApplicationService: MiraiMessageItemFactory.
+2020-08-12_09:42:31.369 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Init ApplicationService: MiraiMessageItemFactory Success!
+2020-08-12_09:42:31.369 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Init ApplicationService: JobManager.
+2020-08-12_09:42:31.369 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Init ApplicationService: JobManager Success!
+2020-08-12_09:42:31.369 [main] INFO  com.IceCreamQAQ.Yu.job.JobLoader - Register JobCenter: com.IceCreamQAQ.Yu.job.ZJobCenter.
+2020-08-12_09:42:31.369 [main] INFO  com.IceCreamQAQ.Yu.job.JobLoader - Register JobCenter: com.IceCreamQAQ.Yu.job.ZJobCenter Success!
+2020-08-12_09:42:31.369 [main] INFO  com.IceCreamQAQ.Yu.job.JobLoader - Register JobCenter: wiki.IceCream.yuq.demo.job.JobMain.
+2020-08-12_09:42:31.369 [main] INFO  com.IceCreamQAQ.Yu.job.JobLoader - Register JobCenter: wiki.IceCream.yuq.demo.job.JobMain Success!
+2020-08-12_09:42:31.369 [main] INFO  c.I.Yu.event.EventListenerLoader - Register EventListener: wiki.IceCream.yuq.demo.event.OnMessageEvent.
+2020-08-12_09:42:31.409 [main] INFO  c.I.Yu.event.EventListenerLoader - Register EventListener: wiki.IceCream.yuq.demo.event.OnMessageEvent Success!
+2020-08-12_09:42:31.409 [main] INFO  c.I.Yu.event.EventListenerLoader - Register EventListener: wiki.IceCream.yuq.demo.event.FriendListEvent.
+2020-08-12_09:42:31.409 [main] INFO  c.I.Yu.event.EventListenerLoader - Register EventListener: wiki.IceCream.yuq.demo.event.FriendListEvent Success!
+2020-08-12_09:42:31.454 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Start ApplicationService: WebHelperBeanFactory.
+2020-08-12_09:42:31.454 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Start ApplicationService: WebHelperBeanFactory Success!
+2020-08-12_09:42:31.454 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Start ApplicationService: EhcacheHelpFactory.
+2020-08-12_09:42:31.454 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Start ApplicationService: EhcacheHelpFactory Success!
+2020-08-12_09:42:31.454 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Start ApplicationService: MiraiBot.
+2020-08-12_09:42:31.509 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Start ApplicationService: MiraiBot Success!
+2020-08-12_09:42:31.509 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Start ApplicationService: MiraiMessageItemFactory.
+2020-08-12_09:42:31.509 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Start ApplicationService: MiraiMessageItemFactory Success!
+2020-08-12_09:42:31.509 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Start ApplicationService: JobManager.
+2020-08-12_09:42:31.514 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Start ApplicationService: JobManager Success!
+2020-08-12_09:42:31.514 [main] INFO  c.i.yuq.mirai.YuQMiraiStart - Done! 6.295s.
+2020-08-12_09:43:01.948 [main] INFO  com.IceCreamQAQ.Yu.di.ConfigManager - ConfigManager Init.
+2020-08-12_09:43:02.054 [main] INFO  com.IceCreamQAQ.Yu.di.ConfigManager - ConfigManager Config Mode: dev.
+2020-08-12_09:43:02.054 [main] INFO  com.IceCreamQAQ.Yu.di.ConfigManager - ConfigManager Init Success.
+2020-08-12_09:43:04.419 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Init ApplicationService: WebHelperBeanFactory.
+2020-08-12_09:43:05.294 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Init ApplicationService: WebHelperBeanFactory Success!
+2020-08-12_09:43:05.296 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Init ApplicationService: EhcacheHelpFactory.
+2020-08-12_09:43:05.304 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Init ApplicationService: EhcacheHelpFactory Success!
+2020-08-12_09:43:05.304 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Init ApplicationService: MiraiBot.
+2020-08-12_09:43:07.202 [main] INFO  com.icecreamqaq.yuq.mirai.logger.Bot - Logging in...
+2020-08-12_09:43:07.259 [main] INFO  c.i.yuq.mirai.logger.Network - Connected to server 42.81.172.147:443
+2020-08-12_09:43:10.867 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Init ApplicationService: MiraiBot Success!
+2020-08-12_09:43:10.869 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Init ApplicationService: MiraiMessageItemFactory.
+2020-08-12_09:43:10.869 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Init ApplicationService: MiraiMessageItemFactory Success!
+2020-08-12_09:43:10.869 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Init ApplicationService: JobManager.
+2020-08-12_09:43:10.874 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Init ApplicationService: JobManager Success!
+2020-08-12_09:43:10.959 [main] INFO  com.IceCreamQAQ.Yu.job.JobLoader - Register JobCenter: com.IceCreamQAQ.Yu.job.ZJobCenter.
+2020-08-12_09:43:10.964 [main] INFO  com.IceCreamQAQ.Yu.job.JobLoader - Register JobCenter: com.IceCreamQAQ.Yu.job.ZJobCenter Success!
+2020-08-12_09:43:10.964 [main] INFO  com.IceCreamQAQ.Yu.job.JobLoader - Register JobCenter: wiki.IceCream.yuq.demo.job.JobMain.
+2020-08-12_09:43:10.967 [main] INFO  com.IceCreamQAQ.Yu.job.JobLoader - Register JobCenter: wiki.IceCream.yuq.demo.job.JobMain Success!
+2020-08-12_09:43:10.967 [main] INFO  c.I.Yu.event.EventListenerLoader - Register EventListener: wiki.IceCream.yuq.demo.event.OnMessageEvent.
+2020-08-12_09:43:11.044 [main] INFO  c.I.Yu.event.EventListenerLoader - Register EventListener: wiki.IceCream.yuq.demo.event.OnMessageEvent Success!
+2020-08-12_09:43:11.054 [main] INFO  c.I.Yu.event.EventListenerLoader - Register EventListener: wiki.IceCream.yuq.demo.event.FriendListEvent.
+2020-08-12_09:43:11.061 [main] INFO  c.I.Yu.event.EventListenerLoader - Register EventListener: wiki.IceCream.yuq.demo.event.FriendListEvent Success!
+2020-08-12_09:43:11.140 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Start ApplicationService: WebHelperBeanFactory.
+2020-08-12_09:43:11.140 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Start ApplicationService: WebHelperBeanFactory Success!
+2020-08-12_09:43:11.140 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Start ApplicationService: EhcacheHelpFactory.
+2020-08-12_09:43:11.142 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Start ApplicationService: EhcacheHelpFactory Success!
+2020-08-12_09:43:11.142 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Start ApplicationService: MiraiBot.
+2020-08-12_09:43:11.224 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Start ApplicationService: MiraiBot Success!
+2020-08-12_09:43:11.229 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Start ApplicationService: MiraiMessageItemFactory.
+2020-08-12_09:43:11.229 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Start ApplicationService: MiraiMessageItemFactory Success!
+2020-08-12_09:43:11.229 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Start ApplicationService: JobManager.
+2020-08-12_09:43:11.234 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Start ApplicationService: JobManager Success!
+2020-08-12_09:43:11.234 [main] INFO  c.i.yuq.mirai.YuQMiraiStart - Done! 9.595s.
