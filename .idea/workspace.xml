@@ -30,11 +30,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/wiki/IceCream/yuq/demo/Start.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+            <state relative-caret-position="3">
+              <caret line="25" column="23" lean-forward="true" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="4" column="7" lean-forward="true" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -85,6 +94,7 @@
         <option value="$PROJECT_DIR$/src/main/resources/conf/YuQ.properties" />
         <option value="$PROJECT_DIR$/src/main/java/wiki/IceCream/yuq/demo/aop/BotInitHook.java" />
         <option value="$PROJECT_DIR$/readme.md" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -104,75 +114,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/YuQ-Mirai-Demo.iml" />
-        <option value="$PROJECT_DIR$/.idea/compiler.xml" />
-        <option value="$PROJECT_DIR$/.idea/encodings.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_IceCreamQAQ_YuQ_0_0_6_3.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_IceCreamQAQ_YuQ_YuQ_Mirai_0_0_6_3.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_IceCreamQAQ_Yu_Core_0_1_4_4.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_62.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okhttp3_okhttp_4_7_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okio_okio_2_6_0.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__io_ktor_ktor_client_cio_1_3_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__io_ktor_ktor_client_core_1_3_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__io_ktor_ktor_client_core_jvm_1_3_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__io_ktor_ktor_http_1_3_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__io_ktor_ktor_http_cio_1_3_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__io_ktor_ktor_http_cio_jvm_1_3_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__io_ktor_ktor_http_jvm_1_3_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__io_ktor_ktor_io_1_3_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__io_ktor_ktor_io_jvm_1_3_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__io_ktor_ktor_network_1_3_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__io_ktor_ktor_network_tls_1_3_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__io_ktor_ktor_utils_1_3_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__io_ktor_ktor_utils_jvm_1_3_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__moe_him188_jcekt_1_0_0.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__moe_him188_jcekt_common_1_0_0.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__net_mamoe_mirai_core_1_1_3.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__net_mamoe_mirai_core_qqandroid_1_1_3.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_ehcache_ehcache_2_10_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_64.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jdt_ecj_3_22_0.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_13_0.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_reflect_1_3_72.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_serialization_1_3_72.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_1_3_72.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_common_1_3_72.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_3_70.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlinx_atomicfu_0_14_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlinx_atomicfu_common_0_14_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlinx_kotlinx_coroutines_core_1_3_7.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlinx_kotlinx_coroutines_core_common_1_3_7.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlinx_kotlinx_coroutines_io_0_1_16.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlinx_kotlinx_coroutines_io_jvm_0_1_16.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlinx_kotlinx_io_0_1_16.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlinx_kotlinx_io_jvm_0_1_16.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlinx_kotlinx_serialization_protobuf_0_20_0.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlinx_kotlinx_serialization_protobuf_common_0_20_0.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlinx_kotlinx_serialization_runtime_0_20_0.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlinx_kotlinx_serialization_runtime_common_0_20_0.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_8_0_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_analysis_8_0_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_commons_8_0_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_tree_8_0_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_util_8_0_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="45" />
-    <option name="y" value="16" />
+    <option name="y" value="15" />
     <option name="width" value="1044" />
     <option name="height" value="789" />
   </component>
@@ -187,47 +131,6 @@
             <path>
               <item name="YuQ-Mirai-Demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="YuQ-Demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="YuQ-Mirai-Demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YuQ-Demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="YuQ-Mirai-Demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YuQ-Demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="YuQ-Mirai-Demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YuQ-Demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="YuQ-Mirai-Demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YuQ-Demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="YuQ-Mirai-Demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YuQ-Demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="YuQ-Mirai-Demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YuQ-Demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="conf" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -291,25 +194,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1597195291261</updated>
-      <workItem from="1597195298749" duration="1628000" />
+      <workItem from="1597195298749" duration="1928000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1628000" />
+    <option name="totallyTimeSpent" value="1928000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
-    <editor active="true" />
+    <frame x="30" y="11" width="696" height="526" extended-state="0" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Image Layers" />
       <window_info id="Capture Tool" />
       <window_info id="UI Designer" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2497979" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.484326" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.3298791" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.9132948" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Messages" weight="0.3298791" />
@@ -318,7 +220,7 @@
       <window_info anchor="bottom" id="LuaCheck" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.45405406" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4525043" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -406,10 +308,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="7" lean-forward="true" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/wiki/IceCream/yuq/demo/Start.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+        <state relative-caret-position="3">
+          <caret line="25" column="23" lean-forward="true" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
