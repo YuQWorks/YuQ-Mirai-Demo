@@ -194,3 +194,58 @@ net.mamoe.mirai.network.WrongPasswordException: Error(title=登录失败, messag
 2020-08-12_09:43:11.229 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Start ApplicationService: JobManager.
 2020-08-12_09:43:11.234 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Start ApplicationService: JobManager Success!
 2020-08-12_09:43:11.234 [main] INFO  c.i.yuq.mirai.YuQMiraiStart - Done! 9.595s.
+2020-08-12_09:44:11.738 [main] INFO  com.IceCreamQAQ.Yu.di.ConfigManager - ConfigManager Init.
+2020-08-12_09:44:11.858 [main] INFO  com.IceCreamQAQ.Yu.di.ConfigManager - ConfigManager Config Mode: dev.
+2020-08-12_09:44:11.858 [main] INFO  com.IceCreamQAQ.Yu.di.ConfigManager - ConfigManager Init Success.
+2020-08-12_09:44:15.793 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Init ApplicationService: WebHelperBeanFactory.
+2020-08-12_09:44:16.784 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Init ApplicationService: WebHelperBeanFactory Success!
+2020-08-12_09:44:16.784 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Init ApplicationService: EhcacheHelpFactory.
+2020-08-12_09:44:16.794 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Init ApplicationService: EhcacheHelpFactory Success!
+2020-08-12_09:44:16.794 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Init ApplicationService: MiraiBot.
+2020-08-12_09:44:18.863 [main] INFO  com.icecreamqaq.yuq.mirai.logger.Bot - Logging in...
+2020-08-12_09:44:18.929 [main] INFO  c.i.yuq.mirai.logger.Network - Connected to server 125.94.60.146:80
+2020-08-12_09:44:19.409 [main] INFO  c.i.yuq.mirai.logger.Network - Login successful
+2020-08-12_09:44:19.569 [main] INFO  c.i.yuq.mirai.logger.Network - 开始加载好友信息
+2020-08-12_09:44:19.599 [main] INFO  c.i.yuq.mirai.logger.Network - 开始加载群组列表与群成员列表
+2020-08-12_09:44:25.851 [main] INFO  c.i.yuq.mirai.logger.Network - 好友列表加载完成, 共 832个
+2020-08-12_09:44:31.193 [main] INFO  c.i.yuq.mirai.logger.Network - 群组列表与群成员加载完成, 共 90个
+2020-08-12_09:44:31.195 [DefaultDispatcher-worker-14] INFO  c.i.yuq.mirai.logger.Network - Awaiting ConfigPushSvc.PushReq
+2020-08-12_09:44:31.196 [main] INFO  c.i.yuq.mirai.logger.Network - Syncing friend message history...
+2020-08-12_09:44:31.861 [main] INFO  c.i.yuq.mirai.logger.Network - Syncing friend message history: Success
+2020-08-12_09:44:31.973 [main] INFO  com.icecreamqaq.yuq.mirai.logger.Bot - Login successful
+2020-08-12_09:44:32.543 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Init ApplicationService: MiraiBot Success!
+2020-08-12_09:44:32.543 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Init ApplicationService: MiraiMessageItemFactory.
+2020-08-12_09:44:32.544 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Init ApplicationService: MiraiMessageItemFactory Success!
+2020-08-12_09:44:32.544 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Init ApplicationService: JobManager.
+2020-08-12_09:44:32.545 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Init ApplicationService: JobManager Success!
+2020-08-12_09:44:32.591 [main] INFO  com.IceCreamQAQ.Yu.job.JobLoader - Register JobCenter: com.IceCreamQAQ.Yu.job.ZJobCenter.
+2020-08-12_09:44:32.591 [main] INFO  com.IceCreamQAQ.Yu.job.JobLoader - Register JobCenter: com.IceCreamQAQ.Yu.job.ZJobCenter Success!
+2020-08-12_09:44:32.591 [main] INFO  com.IceCreamQAQ.Yu.job.JobLoader - Register JobCenter: wiki.IceCream.yuq.demo.job.JobMain.
+2020-08-12_09:44:32.594 [main] INFO  com.IceCreamQAQ.Yu.job.JobLoader - Register JobCenter: wiki.IceCream.yuq.demo.job.JobMain Success!
+2020-08-12_09:44:32.595 [main] INFO  c.I.Yu.event.EventListenerLoader - Register EventListener: wiki.IceCream.yuq.demo.event.OnMessageEvent.
+2020-08-12_09:44:32.623 [main] INFO  c.I.Yu.event.EventListenerLoader - Register EventListener: wiki.IceCream.yuq.demo.event.OnMessageEvent Success!
+2020-08-12_09:44:32.623 [main] INFO  c.I.Yu.event.EventListenerLoader - Register EventListener: wiki.IceCream.yuq.demo.event.FriendListEvent.
+2020-08-12_09:44:32.625 [main] INFO  c.I.Yu.event.EventListenerLoader - Register EventListener: wiki.IceCream.yuq.demo.event.FriendListEvent Success!
+2020-08-12_09:44:32.635 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Start ApplicationService: WebHelperBeanFactory.
+2020-08-12_09:44:32.635 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Start ApplicationService: WebHelperBeanFactory Success!
+2020-08-12_09:44:32.636 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Start ApplicationService: EhcacheHelpFactory.
+2020-08-12_09:44:32.637 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Start ApplicationService: EhcacheHelpFactory Success!
+2020-08-12_09:44:32.637 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Start ApplicationService: MiraiBot.
+2020-08-12_09:44:32.690 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Start ApplicationService: MiraiBot Success!
+2020-08-12_09:44:32.691 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Start ApplicationService: MiraiMessageItemFactory.
+2020-08-12_09:44:32.691 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Start ApplicationService: MiraiMessageItemFactory Success!
+2020-08-12_09:44:32.691 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Start ApplicationService: JobManager.
+2020-08-12_09:44:32.695 [main] INFO  com.IceCreamQAQ.Yu.as.AsLoader - Start ApplicationService: JobManager Success!
+2020-08-12_09:44:32.696 [main] INFO  c.i.yuq.mirai.YuQMiraiStart - Done! 21.303s.
+2020-08-12_09:44:41.198 [DefaultDispatcher-worker-28] INFO  c.i.yuq.mirai.logger.Network - Missing ConfigPushSvc.PushReq.
+2020-08-12_09:45:00.074 [DefaultDispatcher-worker-34] INFO  com.icecreamqaq.yuq.RainBot - Receive Group Message: Member(【魔剑教团·编外骑士】Nero·Sparda(2303961501)[鬼泣-巅峰之战官方5群(391255797]), Message([ "？" ])
+2020-08-12_09:45:07.521 [DefaultDispatcher-worker-34] INFO  com.icecreamqaq.yuq.RainBot - Receive Group Message: Member(RED QUEEN(2772869315)[鬼泣-巅峰之战官方5群(391255797]), Message([ "公然开车车" ])
+2020-08-12_09:45:09.107 [DefaultDispatcher-worker-34] INFO  com.icecreamqaq.yuq.RainBot - Receive Group Message: Member(【魔剑教团·编外骑士】Nero·Sparda(2303961501)[鬼泣-巅峰之战官方5群(391255797]), Message([ "啥啊" ])
+2020-08-12_09:45:17.245 [DefaultDispatcher-worker-34] INFO  com.icecreamqaq.yuq.RainBot - Receive Group Message: Member(【魔剑教团·编外骑士】Nero·Sparda(2303961501)[鬼泣-巅峰之战官方5群(391255797]), Message([ "我没死呢" ])
+2020-08-12_09:45:17.683 [DefaultDispatcher-worker-14] INFO  com.icecreamqaq.yuq.RainBot - Receive Group Message: Member(RED QUEEN(2772869315)[鬼泣-巅峰之战官方5群(391255797]), Message([ "我真棒" ])
+2020-08-12_09:45:36.878 [DefaultDispatcher-worker-7] INFO  com.icecreamqaq.yuq.RainBot - Receive Group Message: Member(【魔剑教团·编外骑士】Nero·Sparda(2303961501)[鬼泣-巅峰之战官方5群(391255797]), Message([ "不愧是你" ])
+2020-08-12_09:45:51.403 [DefaultDispatcher-worker-7] INFO  com.icecreamqaq.yuq.RainBot - Receive Group Message: Member(【魔剑教团·编外骑士】Nero·Sparda(2303961501)[鬼泣-巅峰之战官方5群(391255797]), Message([ img_{4334A83D-1E19-38F9-F0DF-492A02D691DD}.mirai ])
+2020-08-12_09:45:51.867 [DefaultDispatcher-worker-7] INFO  com.icecreamqaq.yuq.RainBot - Receive Group Message: Member(怪盗(244493511)[鬼手PC逆向交流群(859564146]), Message([ "早" ])
+2020-08-12_09:46:45.134 [DefaultDispatcher-worker-4] INFO  com.icecreamqaq.yuq.RainBot - Receive Group Message: Member(丿持笔画流年(2236368829)[Programming Languages(427984429]), Message([ 表情_97 ])
+2020-08-12_09:47:48.466 [DefaultDispatcher-worker-5] INFO  com.icecreamqaq.yuq.RainBot - Receive Group Message: Member(RED QUEEN(2772869315)[鬼泣-巅峰之战官方5群(391255797]), Message([ "4th你好可爱啊，快让老子抱抱" ])
+2020-08-12_09:48:24.933 [DefaultDispatcher-worker-5] INFO  com.icecreamqaq.yuq.RainBot - Receive Group Message: Member(【魔剑教团·圣母歌姬】kyrie(2485574721)[鬼泣-巅峰之战官方5群(391255797]), Message([ "！" ])
