@@ -3,3 +3,4 @@
 device.json
 .idea/
 target/
+*.iml
