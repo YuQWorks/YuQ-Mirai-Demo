@@ -1,0 +1,8 @@
+device.json
+
+.gradle
+build
+
+tmp/**
+log
+src/main/resources/conf/test**

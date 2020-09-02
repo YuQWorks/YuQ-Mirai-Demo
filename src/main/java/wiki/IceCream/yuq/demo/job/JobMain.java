@@ -34,9 +34,9 @@ public class JobMain {
 
     @Cron("At::h::00")
     public void printTime() {
-        Message message = new Message().plus("内容");
+//        Message message = new Message().plus("内容");
 
-        yuq.getGroups().get(123456789L).sendMessage(message);
+//        yuq.getGroups().get(123456789L).sendMessage(message);
     }
 
     /***

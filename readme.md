@@ -1,6 +1,6 @@
 # YuQ-Mirai
 
-YuQ-Mirai 是一个依赖于 Mirai 的 YuQ Framework 的机器人实现。
+YuQ-Mirai 是一个依赖于 [Mirai-Rain](https://github.com/YuQWorks/Mirai-Rain) 的 YuQ Framework 的机器人实现。
 
 YuQ Framework 的目的就是让机器人开发变得更简单和更有效率。
 
@@ -18,12 +18,19 @@ YuQ Framework 的目的就是让机器人开发变得更简单和更有效率。
 ### 后台队列
 参考 wiki.IceCream.yuq.demo.job.JobMain
 ### 数据库支持
-使用方法 // TODO
+使用方法参考 [SuperDemo](https://github.com/YuQWorks/YuQ-SuperDemo)
 ### Web支持
-使用方法 // TODO
+使用方法参考 [SuperDemo](https://github.com/YuQWorks/YuQ-SuperDemo)
 ## 使用方法：
 clone  
 编辑 /src/main/resource/conf/YuQ.properties 填写合适的内容。  
 run wiki.IceCream.yuq.demo.Start  
 
-更详细的使用文档，以及框架的相关开源，将在这段时间内慢慢到来。
+YuQ-Mirai 可直接启动，无需任何外部手段/依赖。
+
+打包：
+```
+./gradle build
+```
+
+更详细的使用文档：[文档](https://yuqworks.github.io/YuQ-Doc/)

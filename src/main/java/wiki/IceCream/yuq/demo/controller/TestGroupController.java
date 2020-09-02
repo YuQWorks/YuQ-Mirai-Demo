@@ -9,7 +9,6 @@ import com.icecreamqaq.yuq.annotation.NextContext;
 import com.icecreamqaq.yuq.entity.Group;
 import com.icecreamqaq.yuq.entity.Member;
 import com.icecreamqaq.yuq.message.Message;
-import com.icecreamqaq.yuq.message.MessageFactory;
 import com.icecreamqaq.yuq.message.MessageItem;
 import com.icecreamqaq.yuq.message.MessageItemFactory;
 
