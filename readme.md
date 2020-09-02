@@ -30,7 +30,8 @@ YuQ-Mirai 可直接启动，无需任何外部手段/依赖。
 
 打包：
 ```
-./gradle build
+./gradlew build
 ```
+对于 Eclipse 用户，可以考虑使用 `./gradlew eclipse` 命令生成 Eclipse 项目。
 
 更详细的使用文档：[文档](https://yuqworks.github.io/YuQ-Doc/)

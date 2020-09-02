@@ -10,6 +10,7 @@ buildscript {
 plugins {
     java
     id("com.github.johnrengelman.shadow") version "5.2.0"
+    eclipse
 }
 
 group = "org.example"
