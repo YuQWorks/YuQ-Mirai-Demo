@@ -20,7 +20,7 @@
         <dependency>
             <groupId>com.IceCreamQAQ.YuQ</groupId>
             <artifactId>YuQ-Mirai</artifactId>
-            <version>0.0.6.8</version>
+            <version>0.0.6.10</version>
         </dependency>
     </dependencies>
 
@@ -61,10 +61,6 @@
         <repository>
             <id>jcenter</id>
             <url>https://jcenter.bintray.com/</url>
-        </repository>
-        <repository>
-            <id>Bintray-IceCreamQAQ-Mirai</id>
-            <url>https://dl.bintray.com/icecreamqaq/mirai/</url>
         </repository>
     </repositories>
 

@@ -1,8 +1,12 @@
 device.json
 
-.gradle
-build
+.gradle/
+build/
+target/
+.idea/
 
-tmp/**
-log
+tmp/
+log/
 src/main/resources/conf/test**
+
+*.iml
