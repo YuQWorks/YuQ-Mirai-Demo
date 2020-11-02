@@ -5,6 +5,7 @@ import com.icecreamqaq.yuq.FunKt;
 import com.icecreamqaq.yuq.annotation.GroupController;
 import com.icecreamqaq.yuq.controller.ContextSession;
 import com.icecreamqaq.yuq.controller.QQController;
+import com.icecreamqaq.yuq.message.Message;
 
 @GroupController
 public class BpController extends QQController {
@@ -15,15 +16,15 @@ public class BpController extends QQController {
      *
      * 注意：消息在被传递到这里之前，会先经过 MessageEvent，则代表当取消事件时，消息并不会被传递到本处。
      *
-     * com.com.icecreamqaq.yuq.FunKt 是一个简单的工具类，封装了一定方法可供快捷使用。
-     * FunKt.firstString 方法，获取 MessageBody 的第一个元素，并且转换为 String。
+     * Message 的相关快捷方法，被封装在 Message 的伴生对象内，既为 Message.Companion。
+     * Message.Companion.firstString 方法，获取 MessageBody 的第一个文字元素，并且转换为 String。
      */
     @Action("绑手机")
     public String bp(ContextSession session) {
         reply("请输入手机号码");
-        String phone = FunKt.firstString(session.waitNextMessage());
+        String phone = Message.Companion.firstString(session.waitNextMessage());
         reply("请输入手机验证码");
-        String key = FunKt.firstString(session.waitNextMessage());
+        String key = Message.Companion.firstString(session.waitNextMessage());
         return String.format("您输入的手机号码为：%s，手机验证码为：%s。", phone, key);
     }
 

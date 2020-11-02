@@ -56,8 +56,8 @@ public class TestGroupController {
      * 一个 Controller 类内，可以接受多个 Before，他们按照一定的顺序依次执行，当所有 Before 执行完成之后，将继续执行 Action。
      */
     @Before
-    public void before(long qq) throws Message {
-        if (qq % 2 == 0) throw mif.text("你没有使用该命令的权限！").toMessage();
+    public void before(long qq) {
+        if (qq % 2 == 0) throw mif.text("你没有使用该命令的权限！").toMessage().toThrowable();
     }
 
     private boolean menuFlag = true;
@@ -162,8 +162,8 @@ public class TestGroupController {
      */
     @Action("绑定手机号")
     @NextContext("bindPhone")
-    public void bindPhone(long qq) throws Message {
-        if (qq % 2 == 0) throw mif.text("您无需绑定手机号码。").toMessage();
+    public void bindPhone(long qq) {
+        if (qq % 2 == 0) throw mif.text("您无需绑定手机号码。").toMessage().toThrowable();
     }
 
 }

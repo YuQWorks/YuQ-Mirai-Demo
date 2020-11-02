@@ -24,7 +24,7 @@ public class TestContextController {
     @NextContext("phoneVerKey")
     @ContextTip("请输入手机号码。")
     @ContextTip(value = "手机号码输入错误，请重新输入。", status = 1)
-    public void bindPhone(@Save @PathVar(0) String phone, BotActionContext actionContext) throws Message {
+    public void bindPhone(@Save @PathVar(0) String phone) {
         if (phone.length() != 11) throw new NextActionContext("bindPhone", 1);
     }
 

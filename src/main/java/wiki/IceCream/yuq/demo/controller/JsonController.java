@@ -6,6 +6,7 @@ import com.icecreamqaq.yuq.annotation.GroupController;
 import com.icecreamqaq.yuq.controller.ContextSession;
 import com.icecreamqaq.yuq.controller.QQController;
 import com.icecreamqaq.yuq.message.JsonEx;
+import com.icecreamqaq.yuq.message.Message;
 
 @GroupController
 public class JsonController extends QQController {
@@ -16,13 +17,13 @@ public class JsonController extends QQController {
      *
      * 注意：消息在被传递到这里之前，会先经过 MessageEvent，则代表当取消事件时，消息并不会被传递到本处。
      *
-     * com.com.icecreamqaq.yuq.FunKt 是一个简单的工具类，封装了一定方法可供快捷使用。
-     * FunKt.firstString 方法，获取 MessageBody 的第一个元素，并且转换为 String。
+     * Message 的相关快捷方法，被封装在 Message 的伴生对象内，既为 Message.Companion。
+     * Message.Companion.firstString 方法，获取 MessageBody 的第一个文字元素，并且转换为 String。
      */
     @Action("准备json")
     public JsonEx json(ContextSession session) {
         reply("您请说");
-        return mif.jsonEx(FunKt.firstString(session.waitNextMessage()));
+        return mif.jsonEx(Message.Companion.firstString(session.waitNextMessage()));
     }
 
 }
