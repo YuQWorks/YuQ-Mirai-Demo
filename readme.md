@@ -17,6 +17,42 @@ Demo 同时提供了 Maven 和 Gradle 的项目配置。
 Gradle 下载默认采用了 冰糕Luminous 提供的镜像地址。  
 如果想采用官方地址下载，请修改 `./gradle/wapper/gradle-wrapper.properties` 文件内的相应值。
 
+## 基础开发介绍:
+
+在 YuQ 我们仅需很简单的代码，就可以完成很复杂的功能。  
+比如，我们要针对一个指令"菜单"，进行一个标准的菜单消息回复。
+```Java
+@GroupController
+public class GroupMenu{ 
+    @Action("菜单")
+    public String menu(){
+        return "这是具体的菜单内容。";
+    } 
+}
+```
+YuQ 会在指令式机器人的开发中，提供非常好的帮助，让开发者能有更好的开发体验。  
+在 Controller 中，我们的 Action 方法，返回的内容，会直接构建成消息，并发送当当前消息源。  
+通过路由映射，我们可以很方便的编写指令，只需要将 Class 声明为一个 Controller，并且编写 Action 方法。  
+其余的，YuQ 会帮您完成。  
+
+比如我们想禁言一个人，禁言的指令为"ban @xxx或QQ号码 time"
+我们只需要编写：
+```Java
+@GroupController
+public class GroupMenu{
+     @Action("ban {ban} {time}")
+     public String ban(Member ban, int time){
+         ban.ban(time);
+         return "好的！";
+     }
+}
+```
+这样，我们就可以很轻易的完成 ban 这个指令了。
+
+对于需要连续对话的指令式机器人，基于 YuQ 也可以轻松满足。  
+
+更详细的使用文档：[文档](https://yuqworks.github.io/YuQ-Doc/)
+
 ## 特性
 
 ### 路由映射
@@ -43,5 +79,3 @@ YuQ-Mirai 可直接启动，无需任何外部手段/依赖。
 ./gradlew build
 ```
 对于 Eclipse 用户，可以考虑使用 `./gradlew eclipse` 命令生成 Eclipse 项目。
-
-更详细的使用文档：[文档](https://yuqworks.github.io/YuQ-Doc/)
