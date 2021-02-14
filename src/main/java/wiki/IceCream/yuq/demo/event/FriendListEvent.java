@@ -9,6 +9,9 @@ public class FriendListEvent {
 
     /***
      * 事件的注册，并不会限制你在某个类去注册，只要你的类标记了 EventListener_ 注解。
+     * 有利于对事件进行分类
+     * 具体的事件列表请查看github文档
+     * https://yuqworks.github.io/YuQ-Doc/#/
      *
      * NewFriendRequestEvent 事件
      * 当有新的好友申请的时候，会触发本事件。

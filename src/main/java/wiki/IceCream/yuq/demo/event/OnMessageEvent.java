@@ -12,6 +12,8 @@ public class OnMessageEvent {
 
 
     /***
+     * 整体
+     *
      * 当收到群聊消息时，本方法会被调用。
      * 事件会优先于控制器收到响应。
      * 事件可以被取消，当事件被取消之后，控制器将不会再响应。
@@ -32,7 +34,9 @@ public class OnMessageEvent {
      */
     @Event(weight = Event.Weight.low)
     public void onGroupMessageLow(GroupMessageEvent event) {
-        if (111 == event.getGroup().getId()) event.setCancel(true);
+        if (111 == event.getGroup().getId()) {
+            event.setCancel(true);
+        }
     }
 
     /***
