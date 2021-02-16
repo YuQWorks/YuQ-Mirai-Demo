@@ -6,6 +6,14 @@ import com.icecreamqaq.yuq.controller.BotActionContext;
 import com.icecreamqaq.yuq.controller.NextActionContext;
 import com.icecreamqaq.yuq.message.Message;
 
+/**
+ *
+ *
+ * 此方法接近弃用，因为单路径有更加简洁的情况。
+ *   参看BpController
+ *
+ *
+ */
 @ContextController
 public class TestContextController {
 

@@ -5,6 +5,7 @@ import com.IceCreamQAQ.Yu.annotation.Event;
 import com.IceCreamQAQ.Yu.annotation.EventListener;
 import com.IceCreamQAQ.Yu.event.EventBus;
 import com.icecreamqaq.yuq.event.MessageEvent;
+import com.icecreamqaq.yuq.message.Message;
 
 import javax.inject.Inject;
 
@@ -23,8 +24,9 @@ public class MyNewEvent {
      */
     @Event
     public void isStartWithSpecialTag(MessageEvent event){
-        String messageString = event.getMessage().getPath().get(0).toString();
+        String messageString = Message.Companion.firstString(event.getMessage());
         if(messageString.startsWith("!")){
+            event.getSender();
             /**
              * 使用new一下你的事件，然后把必要的属性放上去
              * 然后post一下，就会到你的事件里面了
@@ -50,6 +52,8 @@ public class MyNewEvent {
         //获取自定义事件中的内容
         String s =event.startTag;
         System.out.println(s);
+        //发送信息
+        event.messageEvent.getSender().sendMessage(Message.Companion.toMessage("收到了以!开头的信息，").plus(event.messageEvent.getMessage()));
         //取消事件
         event.setCancel(true);
 
@@ -63,6 +67,8 @@ public class MyNewEvent {
         //获取自定义事件中的内容
         String s =event.startTag;
         System.out.println(s);
+        //发送信息
+        event.messageEvent.getSender().sendMessage(Message.Companion.toMessage("收到了以@开头的信息，").plus(event.messageEvent.getMessage()));
         //取消事件
         event.setCancel(true);
 
