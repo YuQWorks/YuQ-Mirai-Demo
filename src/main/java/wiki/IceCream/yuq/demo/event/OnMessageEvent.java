@@ -19,7 +19,7 @@ public class OnMessageEvent {
      * 事件可以被取消，当事件被取消之后，控制器将不会再响应。
      * @param event 事件
      */
-    @Event
+    @Event(weight = Event.Weight.normal)
     public void onGroupMessage(GroupMessageEvent event) {
         System.out.printf("消息来自群：%s(%d)%n", event.getGroup().getName(), event.getGroup().getId());
         System.out.printf("消息来自群成员：%s(%d)%n" , event.getSender().getNameCard(),event.getSender().getId());

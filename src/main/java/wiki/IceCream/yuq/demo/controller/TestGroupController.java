@@ -2,6 +2,7 @@ package wiki.IceCream.yuq.demo.controller;
 
 import com.IceCreamQAQ.Yu.annotation.Action;
 import com.IceCreamQAQ.Yu.annotation.Before;
+import com.IceCreamQAQ.Yu.annotation.Synonym;
 import com.IceCreamQAQ.Yu.job.JobManager;
 import com.icecreamqaq.yuq.YuQ;
 import com.icecreamqaq.yuq.annotation.GroupController;
@@ -127,6 +128,7 @@ public class TestGroupController {
      * 本 Action 的作用，如果发送者是管理员，就将目标禁言一段时间，如果发送人不是管理员，就将自己禁言一段时间。
      */
     @Action("禁言 {sb} {time}")
+    @Synonym({"ban {sb} {time}"})
     public String ban(Member sb, Member qq, int time) {
         if (time < 60) time = 60;
         if (qq.isAdmin()) {
