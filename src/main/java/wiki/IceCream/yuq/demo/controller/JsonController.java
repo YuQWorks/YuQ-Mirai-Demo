@@ -1,7 +1,6 @@
 package wiki.IceCream.yuq.demo.controller;
 
 import com.IceCreamQAQ.Yu.annotation.Action;
-import com.icecreamqaq.yuq.FunKt;
 import com.icecreamqaq.yuq.annotation.GroupController;
 import com.icecreamqaq.yuq.controller.ContextSession;
 import com.icecreamqaq.yuq.controller.QQController;

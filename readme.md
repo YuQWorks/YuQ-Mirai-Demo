@@ -1,6 +1,6 @@
 # YuQ-Mirai
 
-YuQ-Mirai 是一个依赖于 [Mirai-Rain](https://github.com/YuQWorks/Mirai-Rain) 的 YuQ Framework 的机器人实现。
+YuQ-Mirai 是一个依赖于 [Mirai](https://github.com/mamoe/mirai) 的 YuQ Framework 的机器人实现。
 
 YuQ Framework 的目的就是让机器人开发变得更简单和更有效率。
 
