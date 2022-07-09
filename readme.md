@@ -12,11 +12,6 @@ YuQ Framework 的目的就是让机器人开发变得更简单和更有效率。
 Demo 同时提供了 Maven 和 Gradle 的项目配置。  
 请选择一个喜欢的使用。
 
-##
-
-Gradle 下载默认采用了 冰糕Luminous 提供的镜像地址。  
-如果想采用官方地址下载，请修改 `./gradle/wapper/gradle-wrapper.properties` 文件内的相应值。
-
 ## 基础开发介绍:
 
 在 YuQ 我们仅需很简单的代码，就可以完成很复杂的功能。  
