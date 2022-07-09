@@ -20,7 +20,7 @@
         <dependency>
             <groupId>com.IceCreamQAQ.YuQ</groupId>
             <artifactId>YuQ-Mirai</artifactId>
-            <version>0.1.0.0-DEV15</version>
+            <version>0.1.0.0-DEV24</version>
         </dependency>
     </dependencies>
 
@@ -54,14 +54,6 @@
     </build>
 
     <repositories>
-        <repository>
-            <id>central</id>
-            <url>https://repo1.maven.org/maven2/</url>
-        </repository>
-        <repository>
-            <id>jcenter</id>
-            <url>https://jcenter.bintray.com/</url>
-        </repository>
         <repository>
             <id>IceCream</id>
             <url>https://maven.IceCreamQAQ.com/repository/maven-public/</url>

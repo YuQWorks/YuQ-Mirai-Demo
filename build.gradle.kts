@@ -11,12 +11,13 @@ repositories {
     // Gradle 的 扫包是从上至下的。
     // YuQ-Mirai 的依赖位于中央库和 jcenter。
     // Dev 包均位于 IceCream 的 Maven 仓库。
-    mavenCentral()
+//    mavenCentral()
+    mavenLocal()
     maven("https://maven.IceCreamQAQ.com/repository/maven-public/")
 }
 
 dependencies {
-    implementation("com.IceCreamQAQ.YuQ:YuQ-Mirai:0.1.0.0-DEV15")
+    implementation("com.IceCreamQAQ.YuQ:YuQ-Mirai:0.1.0.0-DEV24")
 }
 
 tasks {
